@@ -1,4 +1,4 @@
-nameL DOD
+name: DIGITAL_OCEAN_DEPLOY
 
 on:
   push:
@@ -10,8 +10,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@main
-    - name:Create .env
-      run: echo 'PORT=${{ secret.PORT }}' > .env
+    - name: Create .env
+      run: echo "PORT=${{ secret.PORT }}" > .env
 
     - name: Run build
       run: docker-compose up -d
