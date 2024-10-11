@@ -1,10 +1,10 @@
-name: DIGITAL_OCEAN_DEPLOY
+name: DOD
 
 on: 
   push:
     branches: [ main ]
 
-  jobs:
+jobs:
     Build:
       runs-on: self-hosted[]
 
