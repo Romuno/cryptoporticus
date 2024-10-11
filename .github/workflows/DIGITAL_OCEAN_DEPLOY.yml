@@ -1,4 +1,4 @@
-nameL DIGITAL_OCEAN_DEPLOY
+nameL DOD
 
 on:
   push:
