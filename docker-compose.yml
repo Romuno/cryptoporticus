@@ -1,5 +1,4 @@
 ---
-version: '3.3'
 services:
   db:
     container_name: 'local-wp-db'
@@ -20,7 +19,7 @@ services:
       - db
     image: 'wordpress:latest'
     ports:
-      - "${PORT:-}:80"
+      - '80:80'
     environment:
       WORDPRESS_DB_HOST: 'db:3306'
       WORDPRESS_DB_USER: wordpress_user
